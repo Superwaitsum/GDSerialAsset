@@ -1,0 +1,24 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=3
+
+[application]
+
+config/name="GDSerialAsset"
+run/main_scene="res://Example/SimpleConsole.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=600
+window/size/height=500
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,255 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Example/SimpleConsole.gd" type="Script" id=1]
+[ext_resource path="res://Example/Com.gd" type="Script" id=2]
+
+[node name="Control" type="Control" index="0"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Margin" ]
+
+[node name="LineEdit" type="LineEdit" parent="." index="0"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 43.0
+margin_top = 85.3383
+margin_right = 457.0
+margin_bottom = 119.338
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+secret_character = "*"
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+
+[node name="SendButton" type="Button" parent="." index="1"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 494.0
+margin_top = 78.3383
+margin_right = 553.0
+margin_bottom = 130.338
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Send"
+flat = false
+align = 1
+
+[node name="OptionButton" type="OptionButton" parent="." index="2"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 454.168
+margin_top = 448.503
+margin_right = 564.168
+margin_bottom = 468.503
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+hint_tooltip = "Baudrate selection is what will open the port
+"
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 0
+items = [  ]
+selected = -1
+_sections_unfolded = [ "Hint" ]
+
+[node name="Baudrate" type="Label" parent="." index="3"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 374.168
+margin_top = 452.503
+margin_right = 449.168
+margin_bottom = 466.503
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "Baudrate:"
+uppercase = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Com" type="Node" parent="." index="4"]
+script = ExtResource( 2 )
+endline = "
+"
+
+[node name="UpdateButton" type="Button" parent="." index="5"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 231.168
+margin_top = 443.503
+margin_right = 262.168
+margin_bottom = 469.503
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+hint_tooltip = "Refresh Port list"
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "R"
+flat = false
+align = 1
+_sections_unfolded = [ "Hint" ]
+
+[node name="PortList" type="OptionButton" parent="." index="6"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 106.168
+margin_top = 442.503
+margin_right = 215.168
+margin_bottom = 469.503
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+action_mode = 0
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 0
+items = [  ]
+selected = -1
+_sections_unfolded = [ "Hint" ]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." index="7"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 58.1645
+margin_top = 157.671
+margin_right = 449.164
+margin_bottom = 398.671
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+bbcode_enabled = true
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = ""
+scroll_active = true
+scroll_following = true
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Bb Code" ]
+
+[node name="CheckBox" type="CheckBox" parent="." index="8"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 500.438
+margin_top = 164.832
+margin_right = 579.438
+margin_bottom = 190.832
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+hint_tooltip = "Adds endline at the end of the text sended
+"
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = true
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "w/endline"
+flat = false
+align = 0
+_sections_unfolded = [ "Hint" ]
+
+[node name="Title" type="Label" parent="." index="9"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 190.457
+margin_top = 45.1125
+margin_right = 345.457
+margin_bottom = 64.1125
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "BASIC SERIAL MONITOR"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[connection signal="gui_input" from="LineEdit" to="." method="_on_LineEdit_gui_input"]
+[connection signal="pressed" from="SendButton" to="." method="_on_SendButton_pressed"]
+[connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="pressed" from="UpdateButton" to="." method="_on_UpdateButton_pressed"]
+[connection signal="item_selected" from="PortList" to="." method="_on_PortList_item_selected"]
