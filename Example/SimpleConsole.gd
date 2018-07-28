@@ -37,6 +37,7 @@ func _on_OptionButton_item_selected(ID):
 
 func _on_UpdateButton_pressed(): #Updates the port list
 	$PortList.clear()
+	$PortList.add_item("Select Port")
 	for index in PORT.list_ports():
 		$PortList.add_item(str(index))
 

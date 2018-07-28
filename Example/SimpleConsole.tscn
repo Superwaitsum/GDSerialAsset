@@ -4,6 +4,7 @@
 [ext_resource path="res://Example/Com.gd" type="Script" id=2]
 
 [node name="Control" type="Control" index="0"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -18,6 +19,7 @@ script = ExtResource( 1 )
 _sections_unfolded = [ "Margin" ]
 
 [node name="LineEdit" type="LineEdit" parent="." index="0"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -33,7 +35,6 @@ mouse_filter = 0
 mouse_default_cursor_shape = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
-secret_character = "*"
 focus_mode = 2
 context_menu_enabled = true
 placeholder_alpha = 0.6
@@ -42,6 +43,7 @@ caret_blink_speed = 0.65
 caret_position = 0
 
 [node name="SendButton" type="Button" parent="." index="1"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -66,6 +68,7 @@ flat = false
 align = 1
 
 [node name="OptionButton" type="OptionButton" parent="." index="2"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -95,6 +98,7 @@ selected = -1
 _sections_unfolded = [ "Hint" ]
 
 [node name="Baudrate" type="Label" parent="." index="3"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -116,11 +120,13 @@ lines_skipped = 0
 max_lines_visible = -1
 
 [node name="Com" type="Node" parent="." index="4"]
+
 script = ExtResource( 2 )
 endline = "
 "
 
 [node name="UpdateButton" type="Button" parent="." index="5"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -147,6 +153,7 @@ align = 1
 _sections_unfolded = [ "Hint" ]
 
 [node name="PortList" type="OptionButton" parent="." index="6"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -174,6 +181,7 @@ selected = -1
 _sections_unfolded = [ "Hint" ]
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." index="7"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -202,6 +210,7 @@ override_selected_font_color = false
 _sections_unfolded = [ "Bb Code" ]
 
 [node name="CheckBox" type="CheckBox" parent="." index="8"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -229,6 +238,7 @@ align = 0
 _sections_unfolded = [ "Hint" ]
 
 [node name="Title" type="Label" parent="." index="9"]
+
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -249,7 +259,13 @@ lines_skipped = 0
 max_lines_visible = -1
 
 [connection signal="gui_input" from="LineEdit" to="." method="_on_LineEdit_gui_input"]
+
 [connection signal="pressed" from="SendButton" to="." method="_on_SendButton_pressed"]
+
 [connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]
+
 [connection signal="pressed" from="UpdateButton" to="." method="_on_UpdateButton_pressed"]
+
 [connection signal="item_selected" from="PortList" to="." method="_on_PortList_item_selected"]
+
+
