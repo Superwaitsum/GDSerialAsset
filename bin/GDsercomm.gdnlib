@@ -7,7 +7,7 @@ symbol_prefix="godot_"
 
 [entry]
 
-X11.64=""
+X11.64="res://bin/linux64/libGDSercomm.so"
 Windows.64="res://bin/win64/GDSercomm.dll"
 Windows.32="res://bin/win32/GDSercomm.dll"
 OSX.64=""

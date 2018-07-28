@@ -5,8 +5,11 @@ Asset with a serial communication example and helper functions for godot engine
 
  - A helper script with some useful variables and simple readline(port)
    read function. 
-  - A serial monitor example. 
-   - DLL's for Windows 32 and 64 bits.
+ - A serial monitor example. 
+ - DLL's for Windows 32 and 64 bits.
+ - SO for linux 64 bits. (Feedback Welcome)
+
+Note for **linux64** : You have to copy libsercomm.so to /usr/lib and run ldconfig
 
 Serial library can be compiled from: https://github.com/Superwaitsum/GDSercomm)
 
